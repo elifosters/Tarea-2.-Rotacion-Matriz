@@ -116,4 +116,4 @@ z = float(input("ingrese el valor de z: "))
 angulo = float(input("ingrese el valor del angulo: "))
 direccion = input("Ingrese la dirección a rotar: ")
 
-print(np.round(rotar(x, y , z, angulo, direccion))) #np.round en caso de tener numeros muy pequeños menores a 0
+print(np.absolute(np.round(rotar(x, y , z, angulo, direccion)))) #np.round en caso de tener numeros muy pequeños menores a 0
